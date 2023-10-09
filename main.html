@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="C:\Users\DELL\Desktop\Landing Page\css\main.css">
+    </head>
+    <body>
+    <section>
+      <div class="circle"></div>
+    <header>
+    <a href="#" class="logo"><img src="C:\Users\DELL\Desktop\Landing Page\img\1.png"></a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">What's New</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa velit ea iste 
+          eveniet atque doloribus illo fugit minima. Praesentium recusandae odit ipsum. Vel perferendis 
+          optio dicta quae fuga reiciendis distinctio!</p>
+          <a href="#">Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="C:\Users\DELL\Desktop\Landing Page\img\img1.png" class="Starbucks">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="C:\Users\DELL\Desktop\Landing Page\img\thumb1.png" onclick="imgSlider('C:/Users/DELL/Desktop/Landing Page/img/img1.png');changeCircleColor('#017143')" ></li>
+      <li><img src="C:\Users\DELL\Desktop\Landing Page\img\thumb2.png" onclick="imgSlider('C:/Users/DELL/Desktop/Landing Page/img/img2.png');changeCircleColor('#eb7495')"></li>
+      <li><img src="C:\Users\DELL\Desktop\Landing Page\img\thumb3.png" onclick="imgSlider('C:/Users/DELL/Desktop/Landing Page/img/img3.png');changeCircleColor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="C:\Users\DELL\Desktop\Landing Page\img\facebook.png"></a></li>
+      <li><a href="#"><img src="C:\Users\DELL\Desktop\Landing Page\img\instagram.png"></a></li>
+      <li><a href="#"><img src="C:\Users\DELL\Desktop\Landing Page\img\twitter.png"></a></li>
+    </ul>
+    </section>
+
+    <script type="text/javascript">
+     function imgSlider(anything){
+        document.querySelector('.Starbucks').src = anything;
+     }
+      
+     function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+     }
+      </script>
+    </body> 
+    </html>   
